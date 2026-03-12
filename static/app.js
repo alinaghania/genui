@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   BNP PARIBAS PERSONAL FINANCE — GenUI Engine v5 (Streaming Progressive)
+   BOUYGUES TELECOM — GenUI Engine v5 (Streaming Progressive)
    Chat-driven UI mutation: Claude generates HTML, injected PROGRESSIVELY
    into DOM as sections complete during streaming.
    ═══════════════════════════════════════════════════════════════════════════ */
@@ -171,32 +171,22 @@ async function streamWithProgressiveInjection(messages) {
                     fullText += event.content;
 
                     if (!inHTML && fullText.includes(GENUI_SEPARATOR)) {
-                        // Separator detected — switch to HTML mode
                         inHTML = true;
                         separatorJustDetected = true;
-                        
-                        // Finalize chat text
+
                         const chatPart = fullText.split(GENUI_SEPARATOR)[0].trim();
                         streamBubble.textContent = chatPart;
 
-                        // Show processing indicator
                         processingMsg = addChatMessage('bot', 'Personnalisation de la page en cours...', true);
-
-                        // Show progress overlay
                         genuiOverlay.classList.remove('hidden');
-
-                        // Fade out all existing GenUI sections immediately
                         fadeOutAllSections();
                         sectionsFadedOut = true;
 
-                        // Start building HTML buffer from the text after separator
                         htmlBuffer = fullText.split(GENUI_SEPARATOR).slice(1).join(GENUI_SEPARATOR);
 
                     } else if (inHTML) {
-                        // Accumulate HTML chunk
                         htmlBuffer += event.content;
 
-                        // Try to detect and inject completed sections
                         const newlyInjected = tryInjectCompletedSections(htmlBuffer, injectedSections);
                         for (const { id, promise } of newlyInjected) {
                             injectedSections.add(id);
@@ -204,7 +194,6 @@ async function streamWithProgressiveInjection(messages) {
                         }
 
                     } else {
-                        // Still streaming chat text
                         streamBubble.textContent = fullText;
                     }
 
@@ -221,7 +210,7 @@ async function streamWithProgressiveInjection(messages) {
         }
     }
 
-    // Stream ended — inject the last section (may be incomplete in buffer)
+    // Stream ended — inject the last section
     if (inHTML && htmlBuffer.trim()) {
         const finalInjected = tryInjectFinalSection(htmlBuffer, injectedSections);
         for (const { id, promise } of finalInjected) {
@@ -229,7 +218,6 @@ async function streamWithProgressiveInjection(messages) {
             if (promise) imagePromises.push(promise);
         }
 
-        // Fallback: if no sections were injected by ID, try full innerHTML replacement
         if (injectedSections.size === 0 && htmlBuffer.trim().length > 50) {
             const mainEl = document.getElementById('genui-main');
             if (mainEl) {
@@ -242,12 +230,10 @@ async function streamWithProgressiveInjection(messages) {
         }
     }
 
-    // Wait for all image generations to finish
     if (imagePromises.length > 0) {
         await Promise.allSettled(imagePromises);
     }
 
-    // Finalize UI
     genuiOverlay.classList.add('hidden');
     if (processingMsg) {
         const bubble = processingMsg.querySelector('.chat-bubble');
@@ -266,9 +252,6 @@ async function streamWithProgressiveInjection(messages) {
 // SECTION DETECTION AND PROGRESSIVE INJECTION
 // ═══════════════════════════════════════════════════════════════════════════
 
-/**
- * Fade out all existing GenUI sections immediately for visual feedback.
- */
 function fadeOutAllSections() {
     for (const id of GENUI_SECTIONS) {
         const el = document.getElementById(id);
@@ -278,10 +261,6 @@ function fadeOutAllSections() {
     }
 }
 
-/**
- * Find section boundaries in the HTML buffer using id="genui-..." markers.
- * Returns array of { index, id } sorted by position.
- */
 function findSectionBoundaries(html) {
     const regex = /<(?:div|section)[^>]*\bid="(genui-[^"]*)"[^>]*>/gi;
     const boundaries = [];
@@ -292,19 +271,10 @@ function findSectionBoundaries(html) {
     return boundaries;
 }
 
-/**
- * Try to extract and inject completed sections from the streaming buffer.
- * A section is "complete" when a subsequent section's start tag is detected,
- * meaning the previous section's HTML is fully received.
- * 
- * Returns array of { id, promise } for newly injected sections.
- */
 function tryInjectCompletedSections(htmlBuffer, alreadyInjected) {
     const boundaries = findSectionBoundaries(htmlBuffer);
     const results = [];
 
-    // For each section except the last one (which may be incomplete),
-    // extract its HTML and inject it
     for (let i = 0; i < boundaries.length - 1; i++) {
         const { id } = boundaries[i];
         if (alreadyInjected.has(id)) continue;
@@ -320,17 +290,12 @@ function tryInjectCompletedSections(htmlBuffer, alreadyInjected) {
     return results;
 }
 
-/**
- * Inject the final section when the stream ends.
- * Returns array of { id, promise }.
- */
 function tryInjectFinalSection(htmlBuffer, alreadyInjected) {
     const boundaries = findSectionBoundaries(htmlBuffer);
     const results = [];
 
     if (boundaries.length === 0) return results;
 
-    // Inject any sections that haven't been injected yet
     for (let i = 0; i < boundaries.length; i++) {
         const { id } = boundaries[i];
         if (alreadyInjected.has(id)) continue;
@@ -346,11 +311,6 @@ function tryInjectFinalSection(htmlBuffer, alreadyInjected) {
     return results;
 }
 
-/**
- * Inject a single section's HTML into the DOM with fade-in animation.
- * Immediately starts image generation for that section.
- * Returns a promise that resolves when images are done.
- */
 async function injectSingleSection(id, sectionHTML) {
     const existing = document.getElementById(id);
     if (!existing) {
@@ -358,7 +318,6 @@ async function injectSingleSection(id, sectionHTML) {
         return;
     }
 
-    // Parse the section HTML
     const temp = document.createElement('div');
     temp.innerHTML = sectionHTML;
     const newSection = temp.firstElementChild;
@@ -367,16 +326,13 @@ async function injectSingleSection(id, sectionHTML) {
         return;
     }
 
-    // Ensure ID is preserved
     newSection.id = id;
 
-    // Swap with fade
     existing.classList.add('genui-fade-out');
     await delay(300);
 
     existing.replaceWith(newSection);
 
-    // Trigger fade-in
     newSection.classList.add('genui-fade-out');
     requestAnimationFrame(() => {
         newSection.classList.remove('genui-fade-out');
@@ -385,7 +341,6 @@ async function injectSingleSection(id, sectionHTML) {
 
     console.log(`GenUI: section #${id} injected`);
 
-    // Start image generation for this section immediately
     return generateAllImages(newSection);
 }
 
@@ -407,7 +362,7 @@ async function generateAllImages(container) {
 
         img.classList.add('loading');
         img.src = 'data:image/svg+xml,' + encodeURIComponent(
-            '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="#E8F5EF"><rect width="400" height="250"/></svg>'
+            '<svg xmlns="http://www.w3.org/2000/svg" width="400" height="250" fill="#E8F4FD"><rect width="400" height="250"/></svg>'
         );
 
         const task = generateSingleImage(img, prompt);
@@ -448,7 +403,7 @@ async function generateSingleImage(imgEl, prompt, retries = 2) {
                 }
                 imgEl.classList.remove('loading');
                 imgEl.removeAttribute('data-generate');
-                return; // success
+                return;
             } else if (attempt < retries) {
                 console.warn(`Image gen attempt ${attempt + 1}: no URL in response, retrying...`);
                 await delay(1000 * (attempt + 1));
@@ -474,9 +429,20 @@ function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-// ── Initialize ──
+// ── Mobile menu toggle ──
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('BNP Paribas Personal Finance — GenUI Engine v5 (Streaming Progressive) loaded');
+    console.log('Bouygues Telecom — GenUI Engine v5 (Streaming Progressive) loaded');
+
+    const burger = document.querySelector('.bytel-burger');
+    const nav = document.querySelector('.bytel-nav');
+    if (burger && nav) {
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            const expanded = burger.getAttribute('aria-expanded') === 'true';
+            burger.setAttribute('aria-expanded', !expanded);
+        });
+    }
+
     setTimeout(() => {
         if (!state.chatOpen && chatBadge) {
             chatBadge.style.display = 'none';

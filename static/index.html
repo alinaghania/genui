@@ -1,631 +1,507 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="fr-FR" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if (IE 7)&!(IEMobile)]><html lang="fr-FR" class="no-js lt-ie9 lt-ie8"><![endif]-->
-<!--[if (IE 8)&!(IEMobile)]><html lang="fr-FR" class="no-js lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!--><html lang="fr-FR"><!--<![endif]-->
+<html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/static/img/favicon.png">
-    <link rel="icon" href="/static/img/favicon.png" sizes="32x32">
-    <style type="text/css">
-        :root {
-            --brand-primary: #0D1519;
-        }
-    </style>
-    <title>Accueil - Personal Finance</title>
-    <meta name="description" content="BNP Paribas Personal Finance, leader europeen du credit a la consommation, est une filiale a 100% du groupe BNP Paribas.">
-    <meta property="og:locale" content="fr_FR">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Accueil - Personal Finance">
-    <meta property="og:description" content="BNP Paribas Personal Finance, leader europeen du credit a la consommation, est une filiale a 100% du groupe BNP Paribas.">
-    <meta property="og:site_name" content="Personal Finance">
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome -->
+    <link rel="shortcut icon" href="/static/img/bouygues/favicon.png">
+    <link rel="icon" href="/static/img/bouygues/favicon.png" sizes="32x32">
+    <title>Bouygues Telecom | telephone, forfait mobile, offre internet</title>
+    <meta name="description" content="Interesse par un nouveau smartphone ou abonnement internet ? Decouvrez des maintenant tous nos forfaits, telephones, offres Internet Fibre et ADSL">
+    <!-- Trilogy (Bouygues Telecom design system) -->
+    <link rel="stylesheet" href="/static/css/trilogy.css">
+    <link rel="stylesheet" href="/static/css/trilogy-framework.css">
+    <!-- Font Awesome (pour icones sociales) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <!-- Real BNP PF CSS -->
-    <link rel="stylesheet" href="/static/css/bnppf-real.css">
-    <link rel="stylesheet" href="/static/css/hero.css">
-    <link rel="stylesheet" href="/static/css/highlight-box.css">
-    <!-- GenUI / Chatbot overrides -->
+    <!-- GenUI overrides -->
     <link rel="stylesheet" href="/static/style.css">
 </head>
-<body class="home page-template-default page page-id-2">
-    <a class="go-to-main-content" href="#main-content">Aller au contenu principal</a>
+<body>
 
     <!-- ===== HEADER ===== -->
-    <header id="main-header" role="banner">
-        <div id="top-bar" class="d-none d-lg-block">
-            <div class="container justify-content-between">
-                <div class="sites-links">
-                    <a class="site-link active" href="#">BNP Paribas Personal Finance</a>
-                    <a class="site-link" href="https://observatoirecetelem.com/" target="_blank">Observatoire Cetelem</a>
-                </div>
-                <div class="d-flex ml-auto justify-content-end align-items-center">
-                    <ul class="menu-top d-none d-lg-inline-flex">
-                        <li><a href="#">Nos fournisseurs</a></li>
-                        <li><a href="#">Nous contacter</a></li>
-                        <li><a href="#">Espace Presse</a></li>
-                    </ul>
-                    <div class="wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal">
-                        <ul>
-                            <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-fr wpml-ls-current-language wpml-ls-item-legacy-list-horizontal">
-                                <a class="wpml-ls-native" href="#" aria-current="true">FR</a>
-                            </li>
-                            <li class="wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-item-legacy-list-horizontal">
-                                <a class="wpml-ls-native" href="#" aria-label="Switch to English version">EN</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+    <header id="main-header">
+        <!-- Top navigation bar -->
+        <nav class="navbar" style="background:#25465f;min-height:36px;padding:0;">
+            <div class="container is-fluid" style="display:flex;justify-content:flex-end;align-items:center;gap:20px;height:36px;">
+                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Particuliers</a>
+                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Entreprises</a>
+                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Boutiques</a>
+                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;"><i class="fas fa-headset"></i> Assistance</a>
+                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;"><i class="fas fa-user"></i> Espace Client</a>
             </div>
-        </div>
-        <div class="container mobile-sticky">
-            <div class="main-header-wrapper mobile-icons clearfix">
-                <div class="main-logo-wrapper">
-                    <a href="#" class="main-logo" aria-label="BNP Paribas Personal Finance - Retour a l'accueil">
-                        <img class="img-fluid" src="/static/img/bnppf-logo.png" alt="BNP Paribas Personal Finance">
+        </nav>
+        <!-- Main navbar -->
+        <nav class="navbar has-background-white" style="border-bottom:1px solid #e5e5e5;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,.06);">
+            <div class="container is-fluid">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" style="height:40px;">
+                    </a>
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
                     </a>
                 </div>
-                <button class="d-lg-none search-button-mobile" aria-label="Rechercher" aria-expanded="false">
-                    <i class="fas fa-search"></i>
-                </button>
-                <div class="d-inline-block d-lg-none nav-trigger-container">
-                    <button id="nav-trigger" class="hamburger hamburger--squeeze" type="button" aria-label="Menu principal" aria-controls="main-nav" aria-expanded="false">
-                        <div class="hamburger-box"><span class="hamburger-inner"></span></div>
-                        <span class="d-none">Navigation</span>
-                    </button>
-                </div>
-                <nav id="main-nav">
-                    <div class="main-nav-links">
-                        <ul class="menu menu-main">
-                            <li class="d-none d-lg-block home active" aria-current="true">
-                                <a class="home-link" href="#" aria-label="Accueil">
-                                    <img src="/static/img/home-active.svg" alt="Accueil" class="home-icon">
-                                </a>
-                            </li>
-                            <li class="menu-item"><a href="#">Qui sommes-nous</a></li>
-                            <li class="menu-item"><a href="#">Partenaires</a></li>
-                            <li class="menu-item"><a href="#">Particuliers</a></li>
-                            <li class="menu-item"><a href="#">Nos engagements</a></li>
-                            <li class="menu-item"><a href="#">Nous rejoindre</a></li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#" role="button" aria-haspopup="menu" aria-expanded="false">Actus <i class="fa fa-chevron-down"></i></a>
-                                <ul class="sub-menu">
-                                    <li><a href="#">Nos actus</a></li>
-                                    <li><a href="#">Notre podcast</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <button class="d-none d-lg-inline-block search-button" aria-label="Rechercher" aria-expanded="false">
-                            <i class="fas fa-search"></i>
-                        </button>
+                <div id="mainNavbar" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="#">Forfaits Mobile</a>
+                        <a class="navbar-item" href="#">Telephones</a>
+                        <a class="navbar-item" href="#">Offres Internet</a>
+                        <a class="navbar-item" href="#">Box + Forfaits</a>
+                        <a class="navbar-item" href="#" style="color:#E74C3C;font-weight:600;">Promotions</a>
+                        <div class="navbar-item">
+                            <button style="background:none;border:none;cursor:pointer;font-size:18px;color:#555;"><i class="fas fa-search"></i></button>
+                        </div>
+                        <div class="navbar-item">
+                            <a href="#" style="font-size:18px;color:#555;"><i class="fas fa-shopping-cart"></i></a>
+                        </div>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- ===== MAIN CONTENT (GenUI-replaceable) ===== -->
-    <main id="main-content" role="main">
-        <div class="content" id="genui-main">
+    <main id="main-content">
+        <div id="genui-main">
 
-            <!-- HERO -->
-            <div class="container" id="genui-hero">
-                <div style="--hero-background-color: #337F37;" class="Hero is-home wp-block-cnx-hero">
-                    <div class="Hero-image-wrapper">
-                        <img decoding="async" class="Hero-image" src="/static/img/hero-homepage-full.png" alt="">
+            <!-- ══════ HERO: Samsung Galaxy S26 covering (video) ══════ -->
+            <section class="section" id="genui-hero" style="padding:0;background:#0a0a2e;">
+                <div class="container is-fluid has-text-centered" style="padding:0;position:relative;">
+                    <h2 class="title is-level-2 has-text-white" style="padding-top:32px;">Commandez des maintenant</h2>
+                    <!-- Desktop video -->
+                    <div class="is-hidden-touch" style="max-width:100%;margin:0 auto;">
+                        <video preload="auto" autoplay muted playsinline disablepictureinpicture loop style="width:100%;max-height:500px;cursor:pointer;">
+                            <source src="/static/img/bouygues/samsung-s26-video.mp4" type="video/mp4">
+                        </video>
                     </div>
-                    <div class="Hero-card-wrapper">
-                        <div class="Hero-card">
-                            <h1 class="Hero-title">L'accessibilite numerique chez BNP Paribas Personal Finance</h1>
-                            <p class="Hero-paragraph">L'accessibilite numerique n'est plus une option. Un site web corporate peut-il etre reellement performant sans etre pleinement conforme au RGAA ? Chez BNP Paribas Personal Finance, nous faisons le choix de placer l'inclusion et l'accessibilite au coeur de notre strategie digitale.</p>
-                            <div class="container">
-                                <div class="wp-block-button is-style-fill has-open-sans-font-family">
-                                    <a class="wp-block-button__link wp-element-button" href="#">En savoir plus</a>
-                                </div>
-                            </div>
+                    <!-- Mobile image fallback -->
+                    <div class="is-hidden-desktop" style="padding:0 16px;">
+                        <video preload="auto" autoplay muted playsinline disablepictureinpicture loop style="width:100%;border-radius:16px;">
+                            <source src="/static/img/bouygues/samsung-s26-video-mob.mp4" type="video/mp4">
+                        </video>
+                        <div style="margin-top:16px;">
+                            <img src="/static/img/bouygues/samsung-s26-mobile.webp" alt="Samsung Galaxy S26 - Prix" style="width:100%;max-width:728px;">
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <!-- QUI SOMMES-NOUS EN BREF -->
-            <div class="container" id="genui-about">
-                <div class="wp-block-group d-flex flex-column d-xl-grid my-5 is-layout-grid wp-container-core-group-is-layout-2 wp-block-group-is-layout-grid">
-                    <div style="--highlight-box-background-color: #337F37; --highlight-box-text-background-color: #FFFFFF; --highlight-box-paragraph-color: #000000; --highlight-box-height: auto;" class="highlight-box is-horizontal mt-5 mt-lg-0 qui-sommes-nous wp-block-cnx-highlight-box">
-                        <div class="highlight-box-title-column">
-                            <div class="highlight-box-top-radius"></div>
-                            <h2 class="highlight-box-title longer-top">
-                                <span class="title1">Qui sommes-nous,</span><br>
-                                <span class="title2">en bref</span>
-                            </h2>
-                            <div class="highlight-box-empty-wrapper"></div>
-                        </div>
-                    </div>
-                    <div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
-                        <p class="has-open-sans-font-family">Filiale a 100% du groupe BNP Paribas, nous sommes acteur majeur du financement aux particuliers en Europe au travers de nos activites de credit a la consommation.</p>
-                        <p class="has-open-sans-font-family">Present dans 21 pays, nous accompagnons chaque jour 25 millions de clients pour qu'ils menent a bien leurs projets grace a nos solutions diverses. Au-dela des aspects commerciaux, etre implante dans de nombreux pays apporte de reelles perspectives d'evolutions a nos plus de 16 000 collaborateurs qui, chaque jour dans le monde, contribuent au developpement de notre entreprise.</p>
-                        <p class="has-open-sans-font-family">Depuis pres de 70 ans, nos clients, nos partenaires et nos collaborateurs, ecrivent l'histoire de notre entreprise.</p>
+                    <div class="is-hidden-touch" style="padding:12px 0 24px;">
+                        <p class="text is-level-4 has-text-white"><b>Conditions et DAS</b></p>
+                        <p class="text is-level-4 has-text-weight-bold has-text-white">Un credit vous engage et doit etre rembourse. Verifiez vos capacites de remboursement avant de vous engager.</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- CHIFFRES CLES -->
-            <div class="container" id="genui-stats">
-                <div class="wp-block-group key-figures-wrapper is-layout-constrained wp-block-group-is-layout-constrained">
-                    <h2 class="wp-block-heading my-5" id="key-figures-title" style="font-size:32px;">Nos chiffres cles</h2>
-                    <ul class="wp-block-list key-figures">
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile background-1" style="grid-template-columns:60% auto">
-                                <figure class="wp-block-media-text__media">
-                                    <img loading="lazy" decoding="async" width="80" height="80" src="/static/img/icon-budget.png" alt="" class="size-full">
-                                </figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="title">25 millions</p>
-                                    <p class="text has-bnpp-type-font-family">de clients font confiance<br>a BNP Paribas Personal Finance</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile background-2">
-                                <figure class="wp-block-media-text__media">
-                                    <img loading="lazy" decoding="async" width="81" height="80" src="/static/img/icon-world.png" alt="" class="size-full">
-                                </figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="text has-bnpp-type-font-family">Une presence dans</p>
-                                    <p class="title">21 pays</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile background-3">
-                                <figure class="wp-block-media-text__media">
-                                    <img loading="lazy" decoding="async" width="81" height="80" src="/static/img/icon-person.png" alt="" class="size-full">
-                                </figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="title">16 000</p>
-                                    <p class="text has-bnpp-type-font-family">collaborateurs - fin 2025</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile neutral">
-                                <figure class="wp-block-media-text__media"></figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="title" style="font-size:32px">107 milliards EUR</p>
-                                    <p class="text" style="font-size:16px">d'encours - fin 2025</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile neutral">
-                                <figure class="wp-block-media-text__media"></figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="title">5,2 milliards EUR</p>
-                                    <p class="text">de Produit Net Bancaire<br>fin 2025</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="wp-block-media-text is-stacked-on-mobile neutral">
-                                <figure class="wp-block-media-text__media"></figure>
-                                <div class="wp-block-media-text__content">
-                                    <p></p>
-                                    <p class="title">968 millions EUR</p>
-                                    <p class="text">de Resultat Net Avant Impot<br>fin 2025</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- ACTU BUSINESS -->
-            <div class="container" id="genui-business">
-                <div class="wp-block-group wide-bg-green is-layout-constrained wp-block-group-is-layout-constrained">
-                    <div class="block-carrousel-articles business">
-                        <div class="container">
-                            <div class="articles-header">
-                                <div class="title-wrapper"><h2>Notre actu business</h2></div>
-                                <div class="text-center text-md-right btn-wrapper">
-                                    <a href="#" class="btn btn-border">Voir toutes les actualites</a>
-                                </div>
-                            </div>
-                            <div class="articles" role="region" aria-label="Carrousel d'actualites business">
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-eff-386.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #dcebdc;" href="#">Mobilite</a>
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">Emil Frey France : nouveau partenaire mobilite</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-cetelem-nickel-386.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">Cetelem et Nickel : partenaires de confiance !</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-echonet-386.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #f5d31a;" href="#">Engagement</a>
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">Un monde qui change, nos produits aussi</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-labo-386.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                                <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">Le LABO, expert de l'experience client</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-angelique-386.jpg" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">Angelique Fortune : faire rimer marketing, experience client et business</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="article-container">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img decoding="async" src="/static/img/actu-distinxion-386.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="--cat-bg: #dcebdc;" href="#">Mobilite</a>
-                                                <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                            </div>
-                                            <h3 class="article-title"><a href="#">15 ans de partenariat avec Distinxion</a></h3>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- NOUS REJOINDRE -->
-            <div class="container" id="genui-rejoindre">
-                <div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
-                    <h2 class="wp-block-heading my-3">Nous rejoindre</h2>
-                    <div style="--highlight-box-background-color: #E6E6F5; --highlight-box-text-background-color: #FFFFFF; --highlight-box-paragraph-color: #000000; --highlight-box-height: auto;" class="highlight-box is-horizontal wp-block-cnx-highlight-box">
-                        <div class="highlight-box-title-column">
-                            <div class="highlight-box-top-radius"></div>
-                            <h3 class="highlight-box-title shorter-top">
-                                <span class="title1">Rejoignez</span><br>
-                                <span class="title2">BNP Paribas Personal Finance</span>
-                            </h3>
-                            <div class="highlight-box-paragraph-wrapper">
-                                <p class="highlight-box-paragraph">Aujourd'hui, ce qui compte dans un job c'est de lui donner du sens a travers des actions engagees ; c'est de multiplier ses experiences professionnelles pour developper ses competences.</p>
-                            </div>
-                        </div>
-                        <div class="highlight-box-image-column">
-                            <div class="highlight-box-image">
-                                <img decoding="async" src="/static/img/rejoindre-img.webp" alt="">
-                            </div>
-                            <div class="highlight-box-button-wrapper">
-                                <div class="wp-block-button has-rounded-corners has-open-sans-font-family">
-                                    <a class="wp-block-button__link wp-element-button" href="https://group.bnpparibas/emploi-carriere/toutes-offres-emploi/bnp-paribas-personal-finance" target="_blank" rel="noreferrer noopener">Voir les offres</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- DECOUVREZ NOS METIERS -->
-            <div class="block-carrousel-articles metier" id="genui-metiers">
+            <!-- ══════ LAME CONSIDERATION: 30 ans d'expertise ══════ -->
+            <section class="section has-background-white" id="genui-about" style="padding:32px 0;">
                 <div class="container">
-                    <div class="articles-header">
-                        <div class="title-wrapper">
-                            <h2>Decouvrez nos metiers</h2>
-                            <div class="description"><p>Nos collaborateurs vous presentent leurs metiers et leur quotidien au sein de BNP Paribas Personal Finance.</p></div>
+                    <div class="columns">
+                        <div class="column is-12-tablet is-narrow has-text-centered-touch">
+                            <h2 class="title is-level-4">30 ans d'expertise <span class="is-block-desktop">a vos cotes</span></h2>
                         </div>
-                        <div class="text-center text-md-right btn-wrapper">
-                            <a href="#" class="btn btn-border">Voir toutes les interviews</a>
-                        </div>
-                    </div>
-                    <div class="articles" role="region" aria-label="Carrousel des interviews metiers">
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-beyza-386.png" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Entreprise</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">Ce que signifie le Marketing chez BNP Paribas Personal Finance aujourd'hui</a></h3>
+                        <div class="column">
+                            <div class="columns">
+                                <div class="column is-narrow">
+                                    <span class="icon is-large"><i class="fas fa-wifi" style="font-size:28px;color:#0055A4;"></i></span>
                                 </div>
-                            </div>
-                        </article>
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-mickael-386.jpg" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">Vis ma vie de Directeur de CRC avec Mickael</a></h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-labo-386.png" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #4ba5dc;" href="#">Business</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">Le LABO, expert de l'experience client</a></h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-finance-386.png" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Entreprise</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">La Finance chez BNP Paribas Personal Finance, bien plus qu'une affaire de chiffres</a></h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-nelia-386.png" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">Vis ma vie - Manager des ventes</a></h3>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="article-container">
-                            <div class="article">
-                                <div class="image"><img decoding="async" src="/static/img/actu-florence-386.png" alt="" loading="lazy"></div>
-                                <div class="info">
-                                    <div class="categories">
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Metier</a>
-                                        <a class="btn" style="--cat-bg: #d2d2f3;" href="#">Collaborateurs</a>
-                                    </div>
-                                    <h3 class="article-title"><a href="#">3 questions a Florence Louis-Joseph, notre Directrice des Relations Institutionnelles !</a></h3>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ENGAGEMENTS -->
-            <div class="engagements my-5" id="genui-engagements">
-                <div class="container wide-bg-yellow">
-                    <div class="row">
-                        <div class="col-lg-12 header">
-                            <h2>Nos engagements</h2>
-                            <div class="text-center text-lg-right d-none d-md-block">
-                                <a href="#" target="_blank" class="btn btn-border">+ d'actus engagements</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6 d-flex flex-column justify-content-center">
-                            <div class="document-banner">
-                                <div class="top-radius"></div>
-                                <h3 class="title-wrapper">
-                                    <span class="line_1">Notre rapport</span><br>
-                                    <span class="line_2">developpement durable</span>
-                                </h3>
-                                <div class="content-wrapper">
-                                    <div class="image">
-                                        <img src="/static/img/rapport-engagement-2025.png" alt="On the way Rapport de Developpement Durable" loading="lazy">
-                                    </div>
-                                    <div class="link">
-                                        <a class="btn btn-border" href="#" aria-label="Telecharger le PDF: Notre rapport engagement d'entreprise 2024">
-                                            <i class="fas fa-download"></i> Telecharger le PDF
-                                        </a>
+                                <div class="column is-flex is-aligned-center">
+                                    <div>
+                                        <p class="text is-level-2 has-text-weight-bold">Operateur N1 du WiFi</p>
+                                        <p class="text is-level-2">selon nPerf en 2025.</p>
+                                        <p class="text is-level-4">Barometre nPerf (voir details).</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 engagements-right-block">
-                            <div class="latest-posts-wrapper">
-                                <div class="latest-posts">
-                                    <div class="article">
-                                        <div class="image">
-                                            <img src="/static/img/actu-accessibilite.png" alt="" loading="lazy">
-                                        </div>
-                                        <div class="info">
-                                            <div class="categories">
-                                                <a class="btn" style="color: #f5d31a; border: 1px solid #f5d31a;" href="#">Engagement</a>
-                                            </div>
-                                            <a href="#"><h3>L'accessibilite numerique chez BNP Paribas Personal Finance</h3></a>
-                                        </div>
+                        <div class="column">
+                            <div class="columns">
+                                <div class="column is-narrow">
+                                    <span class="icon is-large"><i class="fas fa-signal" style="font-size:28px;color:#0055A4;"></i></span>
+                                </div>
+                                <div class="column is-flex is-aligned-center">
+                                    <div>
+                                        <p class="text is-level-2 has-text-weight-bold">Operateur N1 sur l'Internet mobile</p>
+                                        <p class="text is-level-2">selon nPerf en 2025.</p>
+                                        <p class="text is-level-4">Barometre nPerf (voir details).</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="engagements-key">
-                                <div><img src="/static/img/icon-saving.svg" alt="" loading="lazy"></div>
-                                <p><strong>17 milliards EUR</strong><br>d'encours de credits pour financer la transition energetique</p>
-                            </div>
-                            <div class="engagements-key">
-                                <div><img src="/static/img/icon-flash.svg" alt="" loading="lazy"></div>
-                                <p><strong>1,3 tonnes</strong><br>de GES emis par collaborateur a temps plein</p>
-                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="header podcast-header">
-                                <h2>Podcast On The Way</h2>
-                                <a href="#" class="btn btn-border">+ de podcasts</a>
-                            </div>
-                            <div class="podcast-teaser-v2">
-                                <div>
-                                    <h3 class="h4">Aleth d'Assignies - Roole : Comprendre le cout reel de la voiture pour repenser la mobilite</h3>
-                                    <div><a class="btn btn-border" href="#">Ecouter l'episode</a></div>
+                        <div class="column">
+                            <div class="columns">
+                                <div class="column is-narrow">
+                                    <span class="icon is-large"><i class="fas fa-headset" style="font-size:28px;color:#0055A4;"></i></span>
                                 </div>
-                                <div>
-                                    <img class="img-fluid" src="/static/img/podcast-img.jpeg" alt="" loading="lazy">
+                                <div class="column is-flex is-aligned-center">
+                                    <div>
+                                        <p class="text is-level-2 has-text-weight-bold">10 000 conseillers et 500 boutiques</p>
+                                        <p class="text is-level-2">proches de vous.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-        </div><!-- /.content #genui-main -->
+            <!-- ══════ QUE RECHERCHEZ-VOUS (mobile: scrollable, desktop: hidden) ══════ -->
+            <section class="section has-background-grey-light" id="genui-stats" style="padding:24px 0;">
+                <div class="container is-fluid">
+                    <div class="columns is-multiline is-centered">
+                        <div class="column is-full has-text-centered">
+                            <h2 class="title is-level-3">Que recherchez-vous ?</h2>
+                        </div>
+                        <div class="column is-10-widescreen">
+                            <div class="columns is-mobile is-centered" style="flex-wrap:wrap;gap:8px;justify-content:center;">
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0055A4">
+                                            <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-box-byou.svg" alt="">
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">B&amp;YOU<br>Pure fibre</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0055A4">
+                                            <i class="fas fa-sim-card" style="font-size:24px;color:white;"></i>
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">B&amp;YOU<br>Forfaits</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                            <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-box-internet.svg" alt="">
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">Box internet</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                            <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-big-sim.svg" alt="">
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">Forfaits mobile</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                            <i class="fas fa-mobile-alt" style="font-size:24px;color:white;"></i>
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">Telephones</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                            <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-BiG.svg" alt="">
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">BiG =<br>box + forfaits</p>
+                                    </a>
+                                </div>
+                                <div class="column has-text-centered" style="flex:0 0 110px;">
+                                    <a href="#" style="text-decoration:none;display:block;">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                            <i class="fas fa-tools" style="font-size:24px;color:white;"></i>
+                                        </div>
+                                        <p class="text is-level-3 has-text-main" style="margin-top:8px;">Assistance</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ DIPTYQUE PRODUITS (iPhone 17e + Pixel 10a) ══════ -->
+            <section class="section has-background-grey-fade" id="genui-business" style="padding:40px 0;">
+                <div class="container is-fluid has-text-centered">
+                    <div class="columns is-multiline is-centered">
+                        <!-- iPhone 17e -->
+                        <div class="column is-6-tablet is-5-widescreen">
+                            <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s;" class="bytel-diptyque-card">
+                                <div style="background-image:url(/static/img/bouygues/iphone17e-bg-desktop.webp);background-size:cover;background-position:center;height:260px;border-radius:16px 16px 0 0;position:relative;display:flex;align-items:center;justify-content:center;">
+                                </div>
+                                <div style="padding:24px;text-align:center;">
+                                    <span style="display:inline-block;background:#0055A4;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">-50EUR de remise immediate</span>
+                                    <h3 class="title is-level-3">iPhone 17e</h3>
+                                    <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
+                                        <span style="font-size:42px;font-weight:800;color:#0055A4;">99</span>
+                                        <span style="font-size:18px;font-weight:600;color:#0055A4;">EUR</span>
+                                    </div>
+                                    <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 200 Go*</p>
+                                    <div style="margin:12px 0;">
+                                        <img src="/static/img/bouygues/iphone17e-stamp.webp" alt="+50EUR de bonus avec la reprise mobile" style="max-width:200px;">
+                                    </div>
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:12px 32px;font-size:14px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:12px;color:#666;"><strong>*Engagement 24 mois.</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR. Voir conditions.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Google Pixel 10a -->
+                        <div class="column is-6-tablet is-5-widescreen">
+                            <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s;" class="bytel-diptyque-card">
+                                <div style="background-color:#D6D1E8;height:260px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:center;padding:20px;">
+                                    <div style="text-align:left;flex:1;">
+                                        <p class="text is-level-4 has-text-weight-bold" style="color:#333;">La valeur sure.</p>
+                                    </div>
+                                    <div style="flex:1;text-align:center;">
+                                        <img src="/static/img/bouygues/pixel10a-desktop-2x.webp" alt="Google Pixel 10a" style="max-height:200px;">
+                                    </div>
+                                </div>
+                                <div style="padding:24px;text-align:center;">
+                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Nouveaute</span>
+                                    <h3 class="title is-level-3">Google Pixel 10a</h3>
+                                    <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
+                                        <span style="font-size:42px;font-weight:800;color:#0055A4;">349</span>
+                                        <span style="font-size:18px;font-weight:600;color:#0055A4;">EUR90</span>
+                                    </div>
+                                    <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 130 Go*</p>
+                                    <div style="margin:12px 0;">
+                                        <img src="/static/img/bouygues/pixel10a-stamp-2x.webp" alt="+100EUR de bonus avec la reprise mobile" style="max-width:200px;">
+                                    </div>
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:12px 32px;font-size:14px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:12px;color:#666;"><strong>*Engagement 24 mois</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ FORFAITS B&YOU SANS ENGAGEMENT ══════ -->
+            <section class="section is-medium" id="genui-rejoindre" style="background:linear-gradient(135deg,#E8F4FD,#f0f8ff);padding:48px 0;">
+                <div class="container is-fluid">
+                    <h2 class="title is-level-2 has-text-centered">Nos forfaits mobile et box sans engagement B&amp;YOU</h2>
+                    <br>
+                    <div class="columns is-multiline">
+                        <!-- B&YOU 100Go -->
+                        <div class="column is-6">
+                            <a href="#" style="display:flex;text-decoration:none;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s;height:100%;" class="bytel-diptyque-card">
+                                <div style="flex:0 0 200px;overflow:hidden;">
+                                    <img src="/static/img/bouygues/byou-100go-horizontal.webp" alt="Forfait B&amp;You 100Go 5G" style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                                <div style="padding:24px;display:flex;flex-direction:column;gap:8px;">
+                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
+                                    <h3 class="title is-level-4">Le plein de gigas a petit prix</h3>
+                                    <p class="text is-level-2 has-text-weight-bold" style="color:#0055A4;">Forfait 100Go 5G</p>
+                                    <div style="display:flex;align-items:baseline;gap:2px;">
+                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">10</span>
+                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                    </div>
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- B&YOU Pure fibre -->
+                        <div class="column is-6">
+                            <a href="#" style="display:flex;text-decoration:none;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s;height:100%;" class="bytel-diptyque-card">
+                                <div style="flex:0 0 200px;overflow:hidden;">
+                                    <img src="/static/img/bouygues/purefibre-horizontal.webp" alt="B&amp;You Pure fibre" style="width:100%;height:100%;object-fit:cover;">
+                                </div>
+                                <div style="padding:24px;display:flex;flex-direction:column;gap:8px;">
+                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
+                                    <h3 class="title is-level-4">La fibre, rien que la fibre</h3>
+                                    <p class="text is-level-2 has-text-weight-bold" style="color:#0055A4;">B&amp;YOU Pure fibre</p>
+                                    <div style="display:flex;align-items:baseline;gap:2px;">
+                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">24</span>
+                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                    </div>
+                                    <p class="text is-level-3">Debit jusqu'a 2 Gb/s et 900 Mb/s<br>Sans engagement</p>
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ BONS PLANS DU MOMENT ══════ -->
+            <section class="section is-medium is-clipped" id="genui-metiers" style="background:#1a2332;padding:48px 0;">
+                <div class="container is-fluid has-text-centered">
+                    <h2 class="title is-level-2 is-inverted" style="color:#fff;">Et nos bons plans du moment</h2>
+                    <br>
+                    <div class="columns is-multiline">
+                        <!-- Samsung Galaxy A56 -->
+                        <div class="column is-4">
+                            <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.1);transition:transform .2s;" class="bytel-diptyque-card">
+                                <div style="background:#F4F4F4;height:220px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;">
+                                    <p style="position:absolute;top:16px;left:0;right:0;font-size:13px;color:#555;">Craquez pour un nouveau mobile</p>
+                                    <img src="/static/img/bouygues/a56-desktop-2x.webp" alt="Samsung Galaxy A56 5G" style="max-height:160px;">
+                                </div>
+                                <div style="padding:20px;text-align:center;">
+                                    <h3 class="title is-level-3">Samsung Galaxy A56 5G</h3>
+                                    <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
+                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">169</span>
+                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR90</span>
+                                    </div>
+                                    <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 130 Go*</p>
+                                    <div style="margin:12px 0;">
+                                        <img src="/static/img/bouygues/a56-stamp-2x.webp" alt="+50EUR de bonus reprise" style="max-width:180px;">
+                                    </div>
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:8px;color:#666;"><strong>*Engagement 24 mois.</strong></p>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Serie Speciale 130Go -->
+                        <div class="column is-4">
+                            <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.1);transition:transform .2s;" class="bytel-diptyque-card">
+                                <div style="background:#F4F4F4;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;">
+                                    <span style="display:inline-block;background:#E74C3C;color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:8px;">Prix en baisse</span>
+                                    <p style="font-size:13px;color:#555;">Un grand forfait a petit prix</p>
+                                    <img src="/static/img/bouygues/fsm-130go-desktop-2x.webp" alt="130 Go 5G" style="max-height:120px;margin-top:8px;">
+                                </div>
+                                <div style="padding:20px;text-align:center;">
+                                    <h3 class="title is-level-3">Serie Speciale 130 Go 5G</h3>
+                                    <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
+                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">9</span>
+                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                    </div>
+                                    <p class="text is-level-2"><strong>Sans engagement</strong><br>Prix client Bbox + 3 forfaits Bouygues Telecom</p>
+                                    <div style="margin-top:12px;">
+                                        <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- Bbox Fibre -->
+                        <div class="column is-4">
+                            <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.1);transition:transform .2s;" class="bytel-diptyque-card">
+                                <div style="background-image:url(/static/img/bouygues/bbox-bg-desktop.webp);background-size:cover;background-position:center;height:220px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;">
+                                    <div style="flex:1;text-align:left;">
+                                        <p style="color:#fff;font-weight:600;font-size:14px;">3, 2, 1...Foncez sur nos bons plans Bbox !</p>
+                                    </div>
+                                    <div style="flex:1;text-align:center;">
+                                        <img src="/static/img/bouygues/bbox-product-desktop-2x.webp" alt="Bbox" style="max-height:160px;">
+                                    </div>
+                                </div>
+                                <div style="padding:20px;text-align:center;">
+                                    <img src="/static/img/bouygues/bbox-stamp-2x.webp" alt="Frais de mise en service offerts" style="max-width:240px;margin-bottom:12px;">
+                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:8px;color:#666;"><strong>*APRES REMBOURSEMENT.</strong></p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ ENGAGEMENTS ══════ -->
+            <section class="section" id="genui-engagements" style="padding:48px 0;background:#fff;">
+                <div class="container">
+                    <h2 class="title is-level-2 has-text-centered">Pourquoi choisir Bouygues Telecom ?</h2>
+                    <br>
+                    <div class="columns is-multiline">
+                        <div class="column is-3">
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
+                                <i class="fas fa-wifi fa-2x" style="color:#0055A4;"></i>
+                                <h3 class="title is-level-4" style="margin-top:16px;">WiFi N1 en France</h3>
+                                <p class="text is-level-3">Elu operateur N1 du WiFi par nPerf en 2025.</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
+                                <i class="fas fa-broadcast-tower fa-2x" style="color:#0055A4;"></i>
+                                <h3 class="title is-level-4" style="margin-top:16px;">Reseau 5G etendu</h3>
+                                <p class="text is-level-3">Couverture 5G en expansion pour une connexion ultra-rapide.</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
+                                <i class="fas fa-leaf fa-2x" style="color:#0055A4;"></i>
+                                <h3 class="title is-level-4" style="margin-top:16px;">Engagement durable</h3>
+                                <p class="text is-level-3">Reprise mobile, reconditionne, reparation pour un numerique responsable.</p>
+                            </div>
+                        </div>
+                        <div class="column is-3">
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
+                                <i class="fas fa-headset fa-2x" style="color:#0055A4;"></i>
+                                <h3 class="title is-level-4" style="margin-top:16px;">Service client premium</h3>
+                                <p class="text is-level-3">10 000 conseillers et 500 boutiques a votre service.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div><!-- /#genui-main -->
     </main>
 
     <!-- ===== FOOTER ===== -->
-    <footer id="main-footer" role="contentinfo">
-        <div id="footer">
-            <div class="container">
-                <div class="footer-wrapper">
-                    <div class="backtotop-container">
-                        <span class="backtotop">
-                            <button type="button" aria-label="Retour en haut de la page" title="Retour en haut de la page"></button>
-                        </span>
+    <footer id="main-footer" style="background:#1a1a2e;color:rgba(255,255,255,.8);padding:48px 0 0;">
+        <div class="container">
+            <div style="display:flex;gap:48px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap;">
+                <div>
+                    <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" style="height:40px;filter:brightness(0) invert(1);">
+                </div>
+                <div style="display:flex;flex:1;gap:40px;flex-wrap:wrap;">
+                    <div>
+                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Offres</h3>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Forfaits mobile</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Forfaits B&amp;YOU</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Offres Internet</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">B&amp;YOU Pure fibre</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Telephones</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Promotions</a></li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-12 col-logo">
-                            <div class="footer-logo">
-                                <img class="img-fluid" src="/static/img/bnppf-logo.png" alt="Logo de BNP Paribas Personal Finance">
-                            </div>
-                        </div>
+                    <div>
+                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Aide &amp; Contact</h3>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Assistance</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Nous contacter</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Trouver une boutique</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Couverture reseau</a></li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <div class="col-6 col-md mb-4 mb-lg-0 col-contact">
-                            <div class="footer-contact">
-                                <h3 class="title-h3" id="about-us">A propos de nous</h3>
-                                <ul class="menu-register" aria-labelledby="about-us">
-                                    <li><a href="#">Qui sommes-nous</a></li>
-                                    <li><a href="#">L'essentiel</a></li>
-                                    <li><a href="#">Partenaires</a></li>
-                                    <li><a href="#">Particuliers</a></li>
-                                    <li><a href="#">Nos engagements</a></li>
-                                    <li><a href="#">La Fondation Cetelem</a></li>
-                                    <li><a href="#">Sygma</a></li>
-                                    <li><a href="https://group.bnpparibas/" target="_blank">Groupe BNP Paribas</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-6 col-md mb-4 mb-lg-0 col-inscription">
-                            <h3 class="title-h3" id="register-menu">Gardons le contact</h3>
-                            <ul class="menu-register" aria-labelledby="register-menu">
-                                <li><a href="#">Nos actus</a></li>
-                                <li><a href="#">Nous contacter</a></li>
-                                <li><a href="#">Nous rejoindre</a></li>
-                                <li><a href="#">Nos sites web</a></li>
-                                <li><a href="#">Presse</a></li>
-                                <li><a href="#">Rapports</a></li>
-                                <li><a href="#">Dispositif d'alerte</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md mb-4 mb-lg-0 col-social">
-                            <div id="footer-social">
-                                <h3 class="title-h3" id="follow-us">Suivez-nous</h3>
-                                <ul class="social-links" aria-labelledby="follow-us">
-                                    <li><a href="https://www.linkedin.com/company/bnp-paribas-personal-finance/" aria-label="LinkedIn" target="_blank"><i class="fab fa-linkedin-in"></i><span>LinkedIn</span></a></li>
-                                    <li><a href="https://twitter.com/bnpp_pf" aria-label="Twitter" target="_blank"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a></li>
-                                    <li><a href="https://www.youtube.com/channel/UCpxgvlG7xCvG8GZY4cQ_h9g" aria-label="YouTube" target="_blank"><i class="fab fa-youtube"></i><span>YouTube</span></a></li>
-                                    <li><a href="https://www.instagram.com/bnpparibas_pf" aria-label="Instagram" target="_blank"><i class="fab fa-instagram"></i><span>Instagram</span></a></li>
-                                </ul>
-                            </div>
+                    <div>
+                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Bouygues Telecom</h3>
+                        <ul style="list-style:none;padding:0;margin:0;">
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Qui sommes-nous</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Engagements</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Recrutement</a></li>
+                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Presse</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Suivez-nous</h3>
+                        <div style="display:flex;gap:12px;">
+                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-instagram"></i></a>
+                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-youtube"></i></a>
+                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div id="bottom-bar">
-                        <ul class="menu-bottom">
-                            <li><a href="#">Plan du site</a></li>
-                            <li><a href="#">Mentions legales</a></li>
-                            <li><a href="#">Protection des donnees personnelles</a></li>
-                            <li><a href="#">Politique cookies</a></li>
-                            <li><a href="#">Code de conduite (PDF)</a></li>
-                            <li><a href="#">Accessibilite : partiellement conforme</a></li>
-                        </ul>
-                    </div>
+            <div style="padding:20px 0;">
+                <div style="display:flex;gap:24px;flex-wrap:wrap;">
+                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Mentions legales</a>
+                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Protection des donnees</a>
+                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Politique cookies</a>
+                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Accessibilite</a>
+                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Plan du site</a>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- ===== CHATBOT CETELEM (GenUI) ===== -->
+    <!-- ===== CHATBOT BOUYGUES (GenUI) ===== -->
     <div id="chatbot-widget" class="chatbot-widget">
-        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Ouvrir le chatbot Cetelem">
-            <img src="/static/img/cetelem-logo-mobile.svg" alt="Cetelem" class="chatbot-toggle-logo">
+        <button id="chatbot-toggle" class="chatbot-toggle" aria-label="Ouvrir le chatbot Bouygues Telecom">
+            <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" class="chatbot-toggle-logo">
             <span class="chatbot-badge">1</span>
         </button>
         <div id="chatbot-panel" class="chatbot-panel hidden">
             <div class="chatbot-header">
                 <div class="chatbot-header-left">
-                    <img src="/static/img/cetelem-logo-mobile.svg" alt="Cetelem" class="chatbot-header-logo">
+                    <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" class="chatbot-header-logo">
                     <div>
-                        <span class="chatbot-header-title">Cetelem</span>
+                        <span class="chatbot-header-title">Bouygues Telecom</span>
                         <span class="chatbot-header-status">Assistant GenUI</span>
                     </div>
                 </div>
@@ -633,11 +509,11 @@
             </div>
             <div id="chatbot-messages" class="chatbot-messages">
                 <div class="chat-message bot">
-                    <div class="chat-bubble">Bonjour, je suis l'assistant Cetelem. Posez-moi une question sur nos offres et je transformerai cette page pour vous.</div>
+                    <div class="chat-bubble">Bonjour, je suis l'assistant Bouygues Telecom. Posez-moi une question sur nos offres et je transformerai cette page pour vous.</div>
                 </div>
             </div>
             <form id="chatbot-form" class="chatbot-form">
-                <input id="chatbot-input" type="text" placeholder="Ex: pret auto, credit immobilier..." autocomplete="off">
+                <input id="chatbot-input" type="text" placeholder="Ex: forfait 5G, fibre, nouveau smartphone..." autocomplete="off">
                 <button type="submit" class="chatbot-send" aria-label="Envoyer">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
                 </button>
@@ -653,8 +529,6 @@
         </div>
     </div>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- GenUI Engine -->
     <script src="/static/app.js"></script>
 </body>
