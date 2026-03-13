@@ -1,0 +1,142 @@
+[    1514ms] Unexpected token '<'
+[    1516ms] Unexpected token '<'
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1604ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1605ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1605ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1605ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1605ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1606ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at lh (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:46551)
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:121062)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:93989)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1606ms] Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at i (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:120721)
+    at oF (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:99046)
+    at oM (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:98916)
+    at oS (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:95687)
+    at ow (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:94242)
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1661ms] SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token ':'
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:945
+    at Array.forEach (<anonymous>)
+    at t.remountScripts (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:657)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:43587
+    at uD (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:84112)
+    at oI (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:113105)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:107680
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1662ms] SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token ':'
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:945
+    at Array.forEach (<anonymous>)
+    at t.remountScripts (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:657)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:43587
+    at uD (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:84112)
+    at oI (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:113105)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:107680
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1663ms] SyntaxError: Failed to execute 'appendChild' on 'Node': Identifier 'getKeyFromSessionStorage' has already been declared
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:945
+    at Array.forEach (<anonymous>)
+    at t.remountScripts (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:657)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:43587
+    at uD (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:84112)
+    at oI (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:113105)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:107680
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    1663ms] SyntaxError: Failed to execute 'appendChild' on 'Node': Unexpected token ':'
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:945
+    at Array.forEach (<anonymous>)
+    at t.remountScripts (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:657)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/pages/index-639342b5ed530851.js:1:43587
+    at uD (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:84112)
+    at oI (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:113105)
+    at https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:107680
+    at x (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:130715)
+    at MessagePort.T (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/framework-f0f34dd321686665.js:1:131245)
+[    5647ms] Error: Invariant: attempted to hard navigate to the same URL / https://www.bouyguestelecom.fr/
+    at V (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/main-254d0272543b95bb.js:1:96268)
+    at Y.change (https://www.bouyguestelecom.fr/statics/landingpages/_next/static/chunks/main-254d0272543b95bb.js:1:99629)
+[  125113ms] [WARNING] [DataLayer] Consent timeout reached @ https://try.abtasty.com/8b3ef2a3aa63d636f58532809321229f/main.887dbaf1b4daa7c23265.js:0

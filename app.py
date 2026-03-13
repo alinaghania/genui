@@ -21,11 +21,10 @@ claude_client = AnthropicFoundry(
     resource=FOUNDRY_RESOURCE,
 )
 
-# ── Azure OpenAI (FLUX image gen) ──
-AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT", "").rstrip("/")
-DEPLOYMENT_FLUX = os.getenv("DEPLOYMENT_NAME", "FLUX.1-Kontext-pro")
-API_KEY_FLUX = os.getenv("api_key", "")
-API_VERSION_FLUX = os.getenv("OPENAI_API_VERSION", "2025-04-01-preview")
+# ── Azure FLUX.2-pro (BFL Service Provider API) ──
+FLUX2_ENDPOINT = os.getenv("FLUX2_ENDPOINT", "").rstrip("/")
+FLUX2_API_KEY = os.getenv("FLUX2_API_KEY", os.getenv("api_key", ""))
+FLUX2_MODEL = os.getenv("FLUX2_MODEL", "flux-2-pro")
 
 # ── System prompt for GenUI ──
 SYSTEM_PROMPT = """Tu es l'assistant GenUI du site Bouygues Telecom.
@@ -47,13 +46,13 @@ REGLES HTML :
 - Pour les images, utilise : <img class="genui-image" data-generate="description detaillee de l'image a generer par IA, style tech moderne, photorealiste" alt="description">
 - Les textes doivent etre realistes, professionnels, avec des prix et offres credibles
 - ZERO emoji dans le HTML
-- Couleurs principales : #0055A4 (bleu Bouygues), #25465f (bleu fonce), #009FDA (bleu clair), #E74C3C (rouge promo), #F4F4F4 (gris clair)
+- Couleurs principales : #25465F (bleu principal), #0C7B91 (teal boutons), #CC4E0A (accent orange promo), #EAF2F4 (fond info clair), #F8F9FA (gris clair)
 
 SECTIONS A GENERER (utilise les vrais IDs et classes du site) :
 
 1. HERO (id="genui-hero") :
 <section class="bytel-hero" id="genui-hero">
-  <div class="bytel-hero-inner" style="background: linear-gradient(135deg, #0055A4 0%, #25465f 100%);">
+  <div class="bytel-hero-inner" style="background: linear-gradient(135deg, #25465F 0%, #0C7B91 100%);">
     <div class="bytel-container">
       <div class="bytel-hero-content">
         <div class="bytel-hero-text">
@@ -96,7 +95,7 @@ SECTIONS A GENERER (utilise les vrais IDs et classes du site) :
     <h2 class="bytel-section-title">[TITRE]</h2>
     <div class="bytel-quicklinks-grid">
       <a href="#" class="bytel-quicklink">
-        <div class="bytel-quicklink-icon" style="background-color: #0055A4;">
+        <div class="bytel-quicklink-icon" style="background-color: #25465F;">
           <i class="fas fa-[ICON]" style="font-size: 24px; color: white;"></i>
         </div>
         <span>[LABEL]</span>
@@ -162,7 +161,7 @@ SECTIONS A GENERER (utilise les vrais IDs et classes du site) :
     <h2 class="bytel-section-title bytel-section-title-inverted">[TITRE]</h2>
     <div class="bytel-bonsplans-grid">
       <div class="bytel-bonplan-card">
-        <div class="bytel-bonplan-image" style="background: #F4F4F4;">
+        <div class="bytel-bonplan-image" style="background: #F8F9FA;">
           <img class="genui-image" data-generate="[DESCRIPTION]" alt="">
         </div>
         <div class="bytel-bonplan-info">
@@ -186,7 +185,7 @@ SECTIONS A GENERER (utilise les vrais IDs et classes du site) :
     <h2 class="bytel-section-title">[TITRE]</h2>
     <div class="bytel-engagements-grid">
       <div class="bytel-engagement-card">
-        <i class="fas fa-[ICON] fa-2x" style="color: #0055A4;"></i>
+        <i class="fas fa-[ICON] fa-2x" style="color: #25465F;"></i>
         <h3>[TITRE]</h3>
         <p>[DESCRIPTION]</p>
       </div>
@@ -224,7 +223,7 @@ def health():
     return jsonify({
         "status": "ok",
         "anthropic_configured": bool(API_KEY_ANTHROPIC),
-        "flux_configured": bool(API_KEY_FLUX),
+        "flux_configured": bool(FLUX2_API_KEY),
     })
 
 
@@ -271,40 +270,39 @@ def chat():
 
 @app.route("/api/generate-image", methods=["POST"])
 def generate_image():
-    """Generate an image using FLUX.1-Kontext-pro via Azure OpenAI."""
+    """Generate an image using FLUX.2-pro via Azure BFL Service Provider API."""
     data = request.json
     prompt = data.get("prompt", "")
 
     if not prompt:
         return jsonify({"error": "No prompt provided"}), 400
 
-    url = (
-        f"{AZURE_OPENAI_ENDPOINT}/openai/deployments/{DEPLOYMENT_FLUX}"
-        f"/images/generations?api-version={API_VERSION_FLUX}"
-    )
     headers = {
         "Content-Type": "application/json",
-        "api-key": API_KEY_FLUX,
+        "Authorization": f"Bearer {FLUX2_API_KEY}",
     }
     payload = {
+        "model": FLUX2_MODEL,
         "prompt": prompt,
         "n": 1,
-        "size": "1024x1024",
+        "width": 1024,
+        "height": 1024,
+        "output_format": "jpeg",
     }
 
     max_retries = 2
     for attempt in range(max_retries + 1):
         try:
-            resp = requests.post(url, headers=headers, json=payload, timeout=120)
+            resp = requests.post(FLUX2_ENDPOINT, headers=headers, json=payload, timeout=120)
             resp.raise_for_status()
             result = resp.json()
 
-            image_url = None
+            b64_image = None
             if "data" in result and len(result["data"]) > 0:
-                image_url = result["data"][0].get("url") or result["data"][0].get("b64_json")
+                b64_image = result["data"][0].get("b64_json")
 
-            if image_url:
-                return jsonify({"url": image_url})
+            if b64_image:
+                return jsonify({"url": f"data:image/jpeg;base64,{b64_image}"})
             elif attempt < max_retries:
                 import time
                 time.sleep(1)
@@ -323,5 +321,5 @@ def generate_image():
 if __name__ == "__main__":
     print("Bouygues Telecom - GenUI Server")
     print(f"  Claude: {DEPLOYMENT_ANTHROPIC} @ {FOUNDRY_RESOURCE}")
-    print(f"  FLUX:   {DEPLOYMENT_FLUX} @ {AZURE_OPENAI_ENDPOINT}")
-    app.run(debug=True, host="0.0.0.0", port=5000)
+    print(f"  FLUX:   {FLUX2_MODEL} @ {FLUX2_ENDPOINT}")
+    app.run(debug=True, host="0.0.0.0", port=5001)

@@ -17,49 +17,44 @@
 </head>
 <body>
 
-    <!-- ===== HEADER ===== -->
+    <!-- ===== HEADER — Single white header matching real site ===== -->
     <header id="main-header">
-        <!-- Top navigation bar -->
-        <nav class="navbar" style="background:#25465f;min-height:36px;padding:0;">
-            <div class="container is-fluid" style="display:flex;justify-content:flex-end;align-items:center;gap:20px;height:36px;">
-                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Particuliers</a>
-                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Entreprises</a>
-                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;">Boutiques</a>
-                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;"><i class="fas fa-headset"></i> Assistance</a>
-                <a href="#" class="text is-level-4" style="color:rgba(255,255,255,.8);text-decoration:none;"><i class="fas fa-user"></i> Espace Client</a>
-            </div>
-        </nav>
-        <!-- Main navbar -->
-        <nav class="navbar has-background-white" style="border-bottom:1px solid #e5e5e5;position:sticky;top:0;z-index:1000;box-shadow:0 2px 8px rgba(0,0,0,.06);">
-            <div class="container is-fluid">
-                <div class="navbar-brand">
-                    <a class="navbar-item" href="#">
-                        <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" style="height:40px;">
-                    </a>
-                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="mainNavbar">
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                        <span aria-hidden="true"></span>
-                    </a>
-                </div>
-                <div id="mainNavbar" class="navbar-menu">
-                    <div class="navbar-end">
-                        <a class="navbar-item" href="#">Forfaits Mobile</a>
-                        <a class="navbar-item" href="#">Telephones</a>
-                        <a class="navbar-item" href="#">Offres Internet</a>
-                        <a class="navbar-item" href="#">Box + Forfaits</a>
-                        <a class="navbar-item" href="#" style="color:#E74C3C;font-weight:600;">Promotions</a>
-                        <div class="navbar-item">
-                            <button style="background:none;border:none;cursor:pointer;font-size:18px;color:#555;"><i class="fas fa-search"></i></button>
-                        </div>
-                        <div class="navbar-item">
-                            <a href="#" style="font-size:18px;color:#555;"><i class="fas fa-shopping-cart"></i></a>
-                        </div>
-                    </div>
+        <!-- Row 1: Logo + Search + Utility links -->
+        <div class="bytel-header-top">
+            <div class="bytel-header-top-left">
+                <a href="#">
+                    <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" style="height:40px;">
+                </a>
+                <div class="bytel-header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Rechercher">
                 </div>
             </div>
+            <div class="bytel-header-utils">
+                <a href="#" class="bytel-header-util-link"><i class="fas fa-headset"></i> <span>Assistance</span></a>
+                <a href="#" class="bytel-header-util-link"><i class="fas fa-store"></i> <span>Nos boutiques</span></a>
+                <a href="#" class="bytel-header-util-link"><i class="fas fa-shopping-bag"></i> <span>Panier</span></a>
+                <a href="#" class="bytel-header-util-link"><i class="fas fa-user"></i> <span>Se Connecter</span></a>
+            </div>
+        </div>
+        <!-- Row 2: Navigation -->
+        <nav class="bytel-header-nav">
+            <a href="#">B&amp;YOU Pure fibre</a>
+            <a href="#">B&amp;YOU Forfaits</a>
+            <a href="#">Box internet</a>
+            <a href="#">Forfaits mobile</a>
+            <a href="#">Telephones</a>
+            <a href="#">BiG = box + forfaits</a>
+            <a href="#" class="bytel-nav-promo-link">Promos</a>
+            <a href="#">Nous decouvrir</a>
+            <a href="#">Pro / Entreprise</a>
         </nav>
     </header>
+
+    <!-- ===== CALLBACK BANNER ===== -->
+    <div class="bytel-callback-banner">
+        Un conseil pour une box internet ou un forfait avec smartphone ? <a href="#">On vous rappelle immediatement</a>
+    </div>
 
     <!-- ===== MAIN CONTENT (GenUI-replaceable) ===== -->
     <main id="main-content">
@@ -101,7 +96,7 @@
                         <div class="column">
                             <div class="columns">
                                 <div class="column is-narrow">
-                                    <span class="icon is-large"><i class="fas fa-wifi" style="font-size:28px;color:#0055A4;"></i></span>
+                                    <span class="icon is-large"><i class="fas fa-wifi" style="font-size:28px;color:#25465F;"></i></span>
                                 </div>
                                 <div class="column is-flex is-aligned-center">
                                     <div>
@@ -115,7 +110,7 @@
                         <div class="column">
                             <div class="columns">
                                 <div class="column is-narrow">
-                                    <span class="icon is-large"><i class="fas fa-signal" style="font-size:28px;color:#0055A4;"></i></span>
+                                    <span class="icon is-large"><i class="fas fa-signal" style="font-size:28px;color:#25465F;"></i></span>
                                 </div>
                                 <div class="column is-flex is-aligned-center">
                                     <div>
@@ -129,7 +124,7 @@
                         <div class="column">
                             <div class="columns">
                                 <div class="column is-narrow">
-                                    <span class="icon is-large"><i class="fas fa-headset" style="font-size:28px;color:#0055A4;"></i></span>
+                                    <span class="icon is-large"><i class="fas fa-headset" style="font-size:28px;color:#25465F;"></i></span>
                                 </div>
                                 <div class="column is-flex is-aligned-center">
                                     <div>
@@ -143,8 +138,8 @@
                 </div>
             </section>
 
-            <!-- ══════ QUE RECHERCHEZ-VOUS (mobile: scrollable, desktop: hidden) ══════ -->
-            <section class="section has-background-grey-light" id="genui-stats" style="padding:24px 0;">
+            <!-- ══════ QUE RECHERCHEZ-VOUS ══════ -->
+            <section class="section has-background-grey-fade" id="genui-stats" style="padding:24px 0;">
                 <div class="container is-fluid">
                     <div class="columns is-multiline is-centered">
                         <div class="column is-full has-text-centered">
@@ -154,7 +149,7 @@
                             <div class="columns is-mobile is-centered" style="flex-wrap:wrap;gap:8px;justify-content:center;">
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0055A4">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0C7B91">
                                             <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-box-byou.svg" alt="">
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">B&amp;YOU<br>Pure fibre</p>
@@ -162,7 +157,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0055A4">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#0C7B91">
                                             <i class="fas fa-sim-card" style="font-size:24px;color:white;"></i>
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">B&amp;YOU<br>Forfaits</p>
@@ -170,7 +165,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465F">
                                             <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-box-internet.svg" alt="">
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">Box internet</p>
@@ -178,7 +173,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465F">
                                             <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-big-sim.svg" alt="">
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">Forfaits mobile</p>
@@ -186,7 +181,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465F">
                                             <i class="fas fa-mobile-alt" style="font-size:24px;color:white;"></i>
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">Telephones</p>
@@ -194,7 +189,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465F">
                                             <img style="width:34px;height:34px;filter:brightness(0) invert(1);" src="/static/img/bouygues/icon-BiG.svg" alt="">
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">BiG =<br>box + forfaits</p>
@@ -202,7 +197,7 @@
                                 </div>
                                 <div class="column has-text-centered" style="flex:0 0 110px;">
                                     <a href="#" style="text-decoration:none;display:block;">
-                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465f">
+                                        <div style="margin:0 auto;display:flex;justify-content:center;align-items:center;height:72px;width:72px;border-radius:50%;background-color:#25465F">
                                             <i class="fas fa-tools" style="font-size:24px;color:white;"></i>
                                         </div>
                                         <p class="text is-level-3 has-text-main" style="margin-top:8px;">Assistance</p>
@@ -224,18 +219,18 @@
                                 <div style="background-image:url(/static/img/bouygues/iphone17e-bg-desktop.webp);background-size:cover;background-position:center;height:260px;border-radius:16px 16px 0 0;position:relative;display:flex;align-items:center;justify-content:center;">
                                 </div>
                                 <div style="padding:24px;text-align:center;">
-                                    <span style="display:inline-block;background:#0055A4;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">-50EUR de remise immediate</span>
+                                    <span style="display:inline-block;background:#CC4E0A;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">-50EUR de remise immediate</span>
                                     <h3 class="title is-level-3">iPhone 17e</h3>
                                     <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
-                                        <span style="font-size:42px;font-weight:800;color:#0055A4;">99</span>
-                                        <span style="font-size:18px;font-weight:600;color:#0055A4;">EUR</span>
+                                        <span style="font-size:42px;font-weight:800;color:#25465F;">99</span>
+                                        <span style="font-size:18px;font-weight:600;color:#25465F;">EUR</span>
                                     </div>
                                     <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 200 Go*</p>
                                     <div style="margin:12px 0;">
                                         <img src="/static/img/bouygues/iphone17e-stamp.webp" alt="+50EUR de bonus avec la reprise mobile" style="max-width:200px;">
                                     </div>
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:12px 32px;font-size:14px;font-weight:600;cursor:pointer;">En profiter</button>
-                                    <p class="text is-level-4" style="margin-top:12px;color:#666;"><strong>*Engagement 24 mois.</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR. Voir conditions.</p>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:12px 32px;font-size:15px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:12px;color:#5a7a8f;"><strong>*Engagement 24 mois.</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR. Voir conditions.</p>
                                 </div>
                             </a>
                         </div>
@@ -244,25 +239,25 @@
                             <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.06);transition:transform .2s;" class="bytel-diptyque-card">
                                 <div style="background-color:#D6D1E8;height:260px;border-radius:16px 16px 0 0;display:flex;align-items:center;justify-content:center;padding:20px;">
                                     <div style="text-align:left;flex:1;">
-                                        <p class="text is-level-4 has-text-weight-bold" style="color:#333;">La valeur sure.</p>
+                                        <p class="text is-level-4 has-text-weight-bold" style="color:#25465F;">La valeur sure.</p>
                                     </div>
                                     <div style="flex:1;text-align:center;">
                                         <img src="/static/img/bouygues/pixel10a-desktop-2x.webp" alt="Google Pixel 10a" style="max-height:200px;">
                                     </div>
                                 </div>
                                 <div style="padding:24px;text-align:center;">
-                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Nouveaute</span>
+                                    <span style="display:inline-block;background:#25465F;color:#fff;padding:4px 16px;border-radius:20px;font-size:13px;font-weight:600;margin-bottom:12px;">Nouveaute</span>
                                     <h3 class="title is-level-3">Google Pixel 10a</h3>
                                     <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
-                                        <span style="font-size:42px;font-weight:800;color:#0055A4;">349</span>
-                                        <span style="font-size:18px;font-weight:600;color:#0055A4;">EUR90</span>
+                                        <span style="font-size:42px;font-weight:800;color:#25465F;">349</span>
+                                        <span style="font-size:18px;font-weight:600;color:#25465F;">EUR90</span>
                                     </div>
                                     <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 130 Go*</p>
                                     <div style="margin:12px 0;">
                                         <img src="/static/img/bouygues/pixel10a-stamp-2x.webp" alt="+100EUR de bonus avec la reprise mobile" style="max-width:200px;">
                                     </div>
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:12px 32px;font-size:14px;font-weight:600;cursor:pointer;">En profiter</button>
-                                    <p class="text is-level-4" style="margin-top:12px;color:#666;"><strong>*Engagement 24 mois</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR.</p>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:12px 32px;font-size:15px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:12px;color:#5a7a8f;"><strong>*Engagement 24 mois</strong> (1) Avec la reprise d'un mobile d'une valeur au moins egale a 10EUR.</p>
                                 </div>
                             </a>
                         </div>
@@ -271,7 +266,7 @@
             </section>
 
             <!-- ══════ FORFAITS B&YOU SANS ENGAGEMENT ══════ -->
-            <section class="section is-medium" id="genui-rejoindre" style="background:linear-gradient(135deg,#E8F4FD,#f0f8ff);padding:48px 0;">
+            <section class="section is-medium" id="genui-rejoindre" style="background:#EAF2F4;padding:48px 0;">
                 <div class="container is-fluid">
                     <h2 class="title is-level-2 has-text-centered">Nos forfaits mobile et box sans engagement B&amp;YOU</h2>
                     <br>
@@ -283,14 +278,14 @@
                                     <img src="/static/img/bouygues/byou-100go-horizontal.webp" alt="Forfait B&amp;You 100Go 5G" style="width:100%;height:100%;object-fit:cover;">
                                 </div>
                                 <div style="padding:24px;display:flex;flex-direction:column;gap:8px;">
-                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
+                                    <span style="display:inline-block;background:#25465F;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
                                     <h3 class="title is-level-4">Le plein de gigas a petit prix</h3>
-                                    <p class="text is-level-2 has-text-weight-bold" style="color:#0055A4;">Forfait 100Go 5G</p>
+                                    <p class="text is-level-2 has-text-weight-bold" style="color:#25465F;">Forfait 100Go 5G</p>
                                     <div style="display:flex;align-items:baseline;gap:2px;">
-                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">10</span>
-                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                        <span style="font-size:36px;font-weight:800;color:#25465F;">10</span>
+                                        <span style="font-size:16px;font-weight:600;color:#25465F;">EUR99/mois</span>
                                     </div>
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
                                 </div>
                             </a>
                         </div>
@@ -301,15 +296,15 @@
                                     <img src="/static/img/bouygues/purefibre-horizontal.webp" alt="B&amp;You Pure fibre" style="width:100%;height:100%;object-fit:cover;">
                                 </div>
                                 <div style="padding:24px;display:flex;flex-direction:column;gap:8px;">
-                                    <span style="display:inline-block;background:#25465f;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
+                                    <span style="display:inline-block;background:#25465F;color:#fff;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:600;width:fit-content;">Bon plan</span>
                                     <h3 class="title is-level-4">La fibre, rien que la fibre</h3>
-                                    <p class="text is-level-2 has-text-weight-bold" style="color:#0055A4;">B&amp;YOU Pure fibre</p>
+                                    <p class="text is-level-2 has-text-weight-bold" style="color:#25465F;">B&amp;YOU Pure fibre</p>
                                     <div style="display:flex;align-items:baseline;gap:2px;">
-                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">24</span>
-                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                        <span style="font-size:36px;font-weight:800;color:#25465F;">24</span>
+                                        <span style="font-size:16px;font-weight:600;color:#25465F;">EUR99/mois</span>
                                     </div>
                                     <p class="text is-level-3">Debit jusqu'a 2 Gb/s et 900 Mb/s<br>Sans engagement</p>
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;width:fit-content;">En profiter</button>
                                 </div>
                             </a>
                         </div>
@@ -317,8 +312,8 @@
                 </div>
             </section>
 
-            <!-- ══════ BONS PLANS DU MOMENT ══════ -->
-            <section class="section is-medium is-clipped" id="genui-metiers" style="background:#1a2332;padding:48px 0;">
+            <!-- ══════ BONS PLANS DU MOMENT — teal gradient ══════ -->
+            <section class="section is-medium is-clipped" id="genui-metiers" style="background:linear-gradient(180deg,#25465F 0%,#0C7B91 100%);padding:48px 0;">
                 <div class="container is-fluid has-text-centered">
                     <h2 class="title is-level-2 is-inverted" style="color:#fff;">Et nos bons plans du moment</h2>
                     <br>
@@ -326,42 +321,42 @@
                         <!-- Samsung Galaxy A56 -->
                         <div class="column is-4">
                             <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.1);transition:transform .2s;" class="bytel-diptyque-card">
-                                <div style="background:#F4F4F4;height:220px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;">
-                                    <p style="position:absolute;top:16px;left:0;right:0;font-size:13px;color:#555;">Craquez pour un nouveau mobile</p>
+                                <div style="background:#F8F9FA;height:220px;display:flex;align-items:center;justify-content:center;padding:20px;position:relative;">
+                                    <p style="position:absolute;top:16px;left:0;right:0;font-size:13px;color:#5a7a8f;">Craquez pour un nouveau mobile</p>
                                     <img src="/static/img/bouygues/a56-desktop-2x.webp" alt="Samsung Galaxy A56 5G" style="max-height:160px;">
                                 </div>
                                 <div style="padding:20px;text-align:center;">
                                     <h3 class="title is-level-3">Samsung Galaxy A56 5G</h3>
                                     <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
-                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">169</span>
-                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR90</span>
+                                        <span style="font-size:36px;font-weight:800;color:#25465F;">169</span>
+                                        <span style="font-size:16px;font-weight:600;color:#25465F;">EUR90</span>
                                     </div>
                                     <p class="text is-level-2">+8EUR/mois x24 mois avec le forfait 130 Go*</p>
                                     <div style="margin:12px 0;">
                                         <img src="/static/img/bouygues/a56-stamp-2x.webp" alt="+50EUR de bonus reprise" style="max-width:180px;">
                                     </div>
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
-                                    <p class="text is-level-4" style="margin-top:8px;color:#666;"><strong>*Engagement 24 mois.</strong></p>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:8px;color:#5a7a8f;"><strong>*Engagement 24 mois.</strong></p>
                                 </div>
                             </a>
                         </div>
                         <!-- Serie Speciale 130Go -->
                         <div class="column is-4">
                             <a href="#" style="display:block;text-decoration:none;border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.1);transition:transform .2s;" class="bytel-diptyque-card">
-                                <div style="background:#F4F4F4;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;">
-                                    <span style="display:inline-block;background:#E74C3C;color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:8px;">Prix en baisse</span>
-                                    <p style="font-size:13px;color:#555;">Un grand forfait a petit prix</p>
+                                <div style="background:#F8F9FA;height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;position:relative;">
+                                    <span style="display:inline-block;background:#CC4E0A;color:#fff;padding:4px 14px;border-radius:20px;font-size:12px;font-weight:600;margin-bottom:8px;">Prix en baisse</span>
+                                    <p style="font-size:13px;color:#5a7a8f;">Un grand forfait a petit prix</p>
                                     <img src="/static/img/bouygues/fsm-130go-desktop-2x.webp" alt="130 Go 5G" style="max-height:120px;margin-top:8px;">
                                 </div>
                                 <div style="padding:20px;text-align:center;">
                                     <h3 class="title is-level-3">Serie Speciale 130 Go 5G</h3>
                                     <div style="display:flex;align-items:baseline;justify-content:center;gap:2px;margin:8px 0;">
-                                        <span style="font-size:36px;font-weight:800;color:#0055A4;">9</span>
-                                        <span style="font-size:16px;font-weight:600;color:#0055A4;">EUR99/mois</span>
+                                        <span style="font-size:36px;font-weight:800;color:#25465F;">9</span>
+                                        <span style="font-size:16px;font-weight:600;color:#25465F;">EUR99/mois</span>
                                     </div>
                                     <p class="text is-level-2"><strong>Sans engagement</strong><br>Prix client Bbox + 3 forfaits Bouygues Telecom</p>
                                     <div style="margin-top:12px;">
-                                        <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
+                                        <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;">En profiter</button>
                                     </div>
                                 </div>
                             </a>
@@ -379,10 +374,98 @@
                                 </div>
                                 <div style="padding:20px;text-align:center;">
                                     <img src="/static/img/bouygues/bbox-stamp-2x.webp" alt="Frais de mise en service offerts" style="max-width:240px;margin-bottom:12px;">
-                                    <button style="background:#0055A4;color:#fff;border:none;border-radius:8px;padding:10px 24px;font-size:13px;font-weight:600;cursor:pointer;">En profiter</button>
-                                    <p class="text is-level-4" style="margin-top:8px;color:#666;"><strong>*APRES REMBOURSEMENT.</strong></p>
+                                    <button style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:10px 24px;font-size:15px;font-weight:600;cursor:pointer;">En profiter</button>
+                                    <p class="text is-level-4" style="margin-top:8px;color:#5a7a8f;"><strong>*APRES REMBOURSEMENT.</strong></p>
                                 </div>
                             </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ LES AVIS DE NOS CLIENTS ══════ -->
+            <section class="section bytel-reviews" id="genui-reviews" style="padding:48px 0;">
+                <div class="container">
+                    <h2 class="title is-level-2 has-text-centered">Les avis de nos clients</h2>
+                    <br>
+                    <div class="bytel-reviews-grid">
+                        <div class="bytel-review-card">
+                            <div class="bytel-review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="bytel-review-text">"Tres satisfait de mon forfait B&amp;YOU 100 Go. Le reseau 5G est excellent et le prix imbattable. Je recommande !"</p>
+                            <p class="bytel-review-author">Thomas D. - Client depuis 2023</p>
+                        </div>
+                        <div class="bytel-review-card">
+                            <div class="bytel-review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                            <p class="bytel-review-text">"La Bbox Fibre fonctionne parfaitement. Installation rapide par le technicien, WiFi stable dans toute la maison. Rien a redire."</p>
+                            <p class="bytel-review-author">Marie L. - Cliente depuis 2022</p>
+                        </div>
+                        <div class="bytel-review-card">
+                            <div class="bytel-review-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            <p class="bytel-review-text">"Service client au top ! J'ai eu un probleme avec ma ligne et tout a ete resolu en moins de 24h. Merci Bouygues Telecom."</p>
+                            <p class="bytel-review-author">Julien M. - Client depuis 2024</p>
+                        </div>
+                    </div>
+                    <div class="bytel-reviews-badge">
+                        <i class="fas fa-shield-alt" style="font-size:28px;color:#0C7B91;"></i>
+                        <div>
+                            <strong>4,2/5</strong>
+                            <span> - Avis Verifies | Plus de 15 000 avis clients</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ NOS TIPS POUR OPTIMISER ══════ -->
+            <section class="section bytel-tips" id="genui-tips" style="padding:48px 0;">
+                <div class="container">
+                    <h2 class="title is-level-2 has-text-centered">Nos tips pour optimiser votre quotidien numerique</h2>
+                    <br>
+                    <div class="bytel-tips-grid">
+                        <div class="bytel-tip-card">
+                            <div class="bytel-tip-card-image">
+                                <i class="fas fa-wifi" style="font-size:48px;color:#0C7B91;"></i>
+                            </div>
+                            <div class="bytel-tip-card-content">
+                                <h3>Comment booster votre WiFi a la maison ?</h3>
+                                <p>Decouvrez nos astuces simples pour ameliorer la couverture WiFi dans toutes les pieces de votre logement.</p>
+                                <a href="#">Lire l'article &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="bytel-tip-card">
+                            <div class="bytel-tip-card-image">
+                                <i class="fas fa-mobile-alt" style="font-size:48px;color:#0C7B91;"></i>
+                            </div>
+                            <div class="bytel-tip-card-content">
+                                <h3>5G : tout ce qu'il faut savoir</h3>
+                                <p>Debits, couverture, compatibilite... Le guide complet pour profiter de la 5G avec votre forfait Bouygues Telecom.</p>
+                                <a href="#">Lire l'article &rarr;</a>
+                            </div>
+                        </div>
+                        <div class="bytel-tip-card">
+                            <div class="bytel-tip-card-image">
+                                <i class="fas fa-recycle" style="font-size:48px;color:#0C7B91;"></i>
+                            </div>
+                            <div class="bytel-tip-card-content">
+                                <h3>Donnez une seconde vie a votre mobile</h3>
+                                <p>Reprise, reconditionnement, reparation : nos solutions pour un numerique plus responsable et plus economique.</p>
+                                <a href="#">Lire l'article &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ══════ ON EST FAIT POUR ETRE ENSEMBLE ══════ -->
+            <section class="section bytel-together" id="genui-together" style="padding:56px 0;">
+                <div class="container">
+                    <div class="bytel-together-inner">
+                        <div class="bytel-together-text">
+                            <h2>On est fait pour etre ensemble</h2>
+                            <p>Chez Bouygues Telecom, nous croyons que la technologie doit rapprocher les gens. Depuis 30 ans, nous innovons pour vous offrir le meilleur du numerique : reseau performant, offres accessibles, service client engage. Parce que votre satisfaction est notre priorite.</p>
+                            <a href="#" style="background:#0C7B91;color:#fff;border:none;border-radius:4px;padding:12px 32px;font-size:15px;font-weight:600;cursor:pointer;display:inline-block;">Nous decouvrir</a>
+                        </div>
+                        <div class="bytel-together-image">
+                            <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom - On est fait pour etre ensemble" style="padding:40px;background:#EAF2F4;border-radius:16px;">
                         </div>
                     </div>
                 </div>
@@ -395,29 +478,29 @@
                     <br>
                     <div class="columns is-multiline">
                         <div class="column is-3">
-                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
-                                <i class="fas fa-wifi fa-2x" style="color:#0055A4;"></i>
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F8F9FA;">
+                                <i class="fas fa-wifi fa-2x" style="color:#25465F;"></i>
                                 <h3 class="title is-level-4" style="margin-top:16px;">WiFi N1 en France</h3>
                                 <p class="text is-level-3">Elu operateur N1 du WiFi par nPerf en 2025.</p>
                             </div>
                         </div>
                         <div class="column is-3">
-                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
-                                <i class="fas fa-broadcast-tower fa-2x" style="color:#0055A4;"></i>
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F8F9FA;">
+                                <i class="fas fa-broadcast-tower fa-2x" style="color:#25465F;"></i>
                                 <h3 class="title is-level-4" style="margin-top:16px;">Reseau 5G etendu</h3>
                                 <p class="text is-level-3">Couverture 5G en expansion pour une connexion ultra-rapide.</p>
                             </div>
                         </div>
                         <div class="column is-3">
-                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
-                                <i class="fas fa-leaf fa-2x" style="color:#0055A4;"></i>
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F8F9FA;">
+                                <i class="fas fa-leaf fa-2x" style="color:#25465F;"></i>
                                 <h3 class="title is-level-4" style="margin-top:16px;">Engagement durable</h3>
                                 <p class="text is-level-3">Reprise mobile, reconditionne, reparation pour un numerique responsable.</p>
                             </div>
                         </div>
                         <div class="column is-3">
-                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F9F9FB;">
-                                <i class="fas fa-headset fa-2x" style="color:#0055A4;"></i>
+                            <div style="text-align:center;padding:24px 16px;border-radius:16px;background:#F8F9FA;">
+                                <i class="fas fa-headset fa-2x" style="color:#25465F;"></i>
                                 <h3 class="title is-level-4" style="margin-top:16px;">Service client premium</h3>
                                 <p class="text is-level-3">10 000 conseillers et 500 boutiques a votre service.</p>
                             </div>
@@ -429,63 +512,99 @@
         </div><!-- /#genui-main -->
     </main>
 
-    <!-- ===== FOOTER ===== -->
-    <footer id="main-footer" style="background:#1a1a2e;color:rgba(255,255,255,.8);padding:48px 0 0;">
+    <!-- ===== FOOTER — 5 columns + social + payment + legal ===== -->
+    <footer id="main-footer" class="bytel-footer">
         <div class="container">
-            <div style="display:flex;gap:48px;padding-bottom:32px;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap;">
-                <div>
-                    <img src="/static/img/bouygues/logo-bouygues-telecom.png" alt="Bouygues Telecom" style="height:40px;filter:brightness(0) invert(1);">
-                </div>
-                <div style="display:flex;flex:1;gap:40px;flex-wrap:wrap;">
-                    <div>
-                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Offres</h3>
-                        <ul style="list-style:none;padding:0;margin:0;">
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Forfaits mobile</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Forfaits B&amp;YOU</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Offres Internet</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">B&amp;YOU Pure fibre</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Telephones</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Promotions</a></li>
+            <!-- 5 columns -->
+            <div class="bytel-footer-top">
+                <div class="bytel-footer-columns">
+                    <div class="bytel-footer-col">
+                        <h3>Forfaits mobile 4G/5G</h3>
+                        <ul>
+                            <li><a href="#">Forfaits mobile</a></li>
+                            <li><a href="#">Forfaits B&amp;YOU</a></li>
+                            <li><a href="#">Forfaits 5G</a></li>
+                            <li><a href="#">Serie Speciale</a></li>
+                            <li><a href="#">Forfaits internationaux</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Aide &amp; Contact</h3>
-                        <ul style="list-style:none;padding:0;margin:0;">
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Assistance</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Nous contacter</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Trouver une boutique</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Couverture reseau</a></li>
+                    <div class="bytel-footer-col">
+                        <h3>Telephones mobiles</h3>
+                        <ul>
+                            <li><a href="#">iPhone</a></li>
+                            <li><a href="#">Samsung Galaxy</a></li>
+                            <li><a href="#">Google Pixel</a></li>
+                            <li><a href="#">Mobiles reconditionnés</a></li>
+                            <li><a href="#">Accessoires</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Bouygues Telecom</h3>
-                        <ul style="list-style:none;padding:0;margin:0;">
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Qui sommes-nous</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Engagements</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Recrutement</a></li>
-                            <li style="margin-bottom:8px;"><a href="#" style="font-size:13px;color:rgba(255,255,255,.65);text-decoration:none;">Presse</a></li>
+                    <div class="bytel-footer-col">
+                        <h3>Internet</h3>
+                        <ul>
+                            <li><a href="#">Offres Bbox</a></li>
+                            <li><a href="#">B&amp;YOU Pure fibre</a></li>
+                            <li><a href="#">Test d'eligibilite</a></li>
+                            <li><a href="#">Bbox WiFi 6E</a></li>
+                            <li><a href="#">Bbox 4K</a></li>
                         </ul>
                     </div>
-                    <div>
-                        <h3 style="font-size:14px;font-weight:700;color:#fff;margin-bottom:16px;">Suivez-nous</h3>
-                        <div style="display:flex;gap:12px;">
-                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fa-brands fa-x-twitter"></i></a>
-                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-instagram"></i></a>
-                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-youtube"></i></a>
-                            <a href="#" style="width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.1);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:16px;text-decoration:none;"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
+                    <div class="bytel-footer-col">
+                        <h3>Pourquoi nous choisir ?</h3>
+                        <ul>
+                            <li><a href="#">Reseau N1 WiFi</a></li>
+                            <li><a href="#">Couverture 5G</a></li>
+                            <li><a href="#">Engagements RSE</a></li>
+                            <li><a href="#">Programme fidelite</a></li>
+                            <li><a href="#">Espace client</a></li>
+                        </ul>
+                    </div>
+                    <div class="bytel-footer-col">
+                        <h3>Bouygues Telecom</h3>
+                        <ul>
+                            <li><a href="#">Qui sommes-nous</a></li>
+                            <li><a href="#">Recrutement</a></li>
+                            <li><a href="#">Presse</a></li>
+                            <li><a href="#">Nos boutiques</a></li>
+                            <li><a href="#">Assistance</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div style="padding:20px 0;">
-                <div style="display:flex;gap:24px;flex-wrap:wrap;">
-                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Mentions legales</a>
-                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Protection des donnees</a>
-                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Politique cookies</a>
-                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Accessibilite</a>
-                    <a href="#" style="font-size:12px;color:rgba(255,255,255,.5);text-decoration:none;">Plan du site</a>
+            <!-- Social row -->
+            <div class="bytel-footer-social">
+                <span class="bytel-footer-social-label">Nous retrouver</span>
+                <ul class="bytel-social-links">
+                    <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a></li>
+                    <li><a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                </ul>
+            </div>
+            <!-- Payment icons row -->
+            <div class="bytel-footer-payment">
+                <span class="bytel-footer-payment-label">Paiement securise</span>
+                <div class="bytel-payment-icons">
+                    <span class="bytel-payment-icon"><i class="fab fa-cc-visa"></i> Visa</span>
+                    <span class="bytel-payment-icon"><i class="fab fa-cc-paypal"></i> PayPal</span>
+                    <span class="bytel-payment-icon"><i class="fab fa-cc-mastercard"></i> MasterCard</span>
+                    <span class="bytel-payment-icon"><i class="fab fa-cc-amex"></i> AmEx</span>
+                    <span class="bytel-payment-icon">CB</span>
                 </div>
+            </div>
+            <!-- Legal links -->
+            <div class="bytel-footer-bottom">
+                <ul>
+                    <li><a href="#">Mentions legales</a></li>
+                    <li><a href="#">Donnees personnelles</a></li>
+                    <li><a href="#">Gerer les cookies</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                    <li><a href="#">Accessibilite</a></li>
+                    <li><a href="#">Signaler un contenu</a></li>
+                    <li><a href="#">Tarifs &amp; conditions</a></li>
+                </ul>
             </div>
         </div>
     </footer>
